@@ -298,3 +298,10 @@ Audio: Suno tracks + custom or sourced dice/foley. Short vocal ad-libs can be ge
 ---
 
 *This document is the living source of truth for scope and priorities. Update it when major decisions change.*
+
+---
+
+### Stamp
+
+**This build plan, systems design, and overall project direction were developed with Grok (xAI) on August 9, 2026.**  
+See [SESSION_LOG.md](./SESSION_LOG.md) for the full design conversation record.
