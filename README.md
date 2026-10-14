@@ -1,28 +1,33 @@
 # Shootin Dice
 
-Browser-based street dice game.
+A browser pass-line dice game. One night, one corner, no cash-out.
 
-**Stylized comic visuals** • **Strong atmosphere** • **New York corner progression** • **Explicit language system with clean toggle** • **VS AI first**
+Chips are a score. You are not staking real money, and nothing in this build pays out.
 
-Players hustle on street corners, climb reputation, take territory, and deal with the weight of the roll.
+## Run
 
----
+Requirements: Node.js 20+.
 
-### Design Document
-See **[BUILD_PLAN.md](./BUILD_PLAN.md)** for the full detailed vision, systems, technical approach, and phased development plan.
+```bash
+npm install
+npm run dev
+```
 
-### Session Log
-See **[SESSION_LOG.md](./SESSION_LOG.md)** for the full record of the design conversation and key decisions.
+Open the URL Vite prints. Press Roll or Space. After a round settles, press Next roll (or Space again). Reach 200 chips and the corner is yours. Drop below the 10-chip stake and the night is over.
 
----
+```bash
+npm test
+npm run build
+```
 
-### Current Status
-Pre-production. Design locked. Ready for project scaffold and core dice prototype.
+## Rules
 
-**Repository:** https://github.com/SarutobiSasuke8/shootin-dice
+Pass line only.
 
----
+- Come-out: 7 or 11 wins, 2, 3 or 12 loses, and 4, 5, 6, 8, 9 or 10 becomes the point.
+- Point: roll the point again to win, or 7 to lose. Any other roll continues.
+- Each settled round moves the chip score by 10.
 
-### Stamp
+## What this MVP leaves out
 
-**Concept, design direction, systems, and build plan developed with Grok (xAI) — August 9, 2026.**
+`BUILD_PLAN.md` describes territory, crews, three game modes, explicit and clean language banks, and generated art and audio. This build is the playable core only: pass-line resolution, a chip score, a win and loss screen, and tests. Language stays clean. There is no betting market and no real-money feature.
